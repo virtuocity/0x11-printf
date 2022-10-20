@@ -19,7 +19,7 @@ The format string contains two different types of things:
 argument to printf.   
 e.g 
 
-	printf ("I am Woche");  
+	printf ("I am Woche");
 	printf("I am no %d", 5);  
 
 
