@@ -22,4 +22,11 @@ e.g
 		printf ("I am Woche");
 		printf("I am no %d", 5);  
 
+### Variadic Functions
+printf is a variadic function , it takes a variable number of arguments(hence *varargs*) as formatted string. Hence the  
+prototype:
+	int _printf(const char *format, ...);
+
+## Pseudocode
++ get string input
 
