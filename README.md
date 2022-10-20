@@ -36,4 +36,8 @@ Hence the prototype:
 + Finally, va_end does whatever cleanup is necessary. It must be called before the program returns.  
 ## Pseudocode
 + get string input
-
++ traverse formatted string using for loop
++ if no '%' 
+	+ print string
++ else
+	switch through conversion specifier/format specifiers
