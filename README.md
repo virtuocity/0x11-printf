@@ -17,7 +17,8 @@ The format string contains two different types of things:
 1. Ordinary characters, which are sent to the standard output stream 
 2. Conversion specifications or format specifiers, each of which causes conversion and printing of the corresponding  
 argument to printf.   
-e.g  
+e.g 
+
 	printf ("I am Woche");  
 	printf("I am no %d", 5);  
 
