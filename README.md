@@ -18,8 +18,8 @@ The format string contains two different types of things:
 2. Conversion specifications or format specifiers, each of which causes conversion and printing of the corresponding  
 argument to printf.   
 e.g 
-
-	printf ("I am Woche");
-	printf("I am no %d", 5);  
+		
+		printf ("I am Woche");
+		printf("I am no %d", 5);  
 
 
