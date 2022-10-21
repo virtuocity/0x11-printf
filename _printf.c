@@ -20,11 +20,26 @@ int _printf(const char *format, ...)
 	va_start(valist,format);
 	for (s = format; *s != '\0'; s++)
 	{
-		while (*(s + i) != '%')
+		while (*s != '%')
 		{
-			write(1,&s[i],1);
-			i++;
+			write(1,*s,1);
+			*s++;
 		}
 	
-	write(1,"\n", 1);
+		switch(*s)
+		{
+			case 'c' : i = va_arg(valist,int);
+			   	write(1,*s,1);
+			   	break;
+			case 's' : s = va_arg(valist,char *);
+			   	while (*s  = '\0')
+			   	{
+				   	write(1,*s,1);
+				   	*s++;
+				}
+			   	break;
+		}
+	}
+	va_endarg();
+	free(s);
 }
